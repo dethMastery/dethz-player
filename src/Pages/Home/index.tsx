@@ -6,7 +6,7 @@ import { Footer } from "../../Components/Footer";
 export const HomePage = () => {
   const [params, _setParams] = useSearchParams();
 
-  const src = params.get("src");
+  const src = params.get("src") || params.get("link");
 
   return (
     <div className="w-full h-screen flex flex-col justify-center items-center text-center">
